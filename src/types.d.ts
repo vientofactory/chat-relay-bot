@@ -6,6 +6,7 @@ declare global {
       BOT_TOKEN: string;
       BOT_PRESENCE_NAME: string;
       API_URI: string;
+      CHAT_CHANNEL: string;
     }
   }
 }

@@ -6,17 +6,19 @@ const event: BotEvent = {
   name: "messageCreate",
   async execute(message: Message) {
     if (message.author.bot) return;
-    let chatData = JSON.stringify({
-      user: {
-        name: message.author.globalName,
-      },
-      message: message.content,
-    });
-    axios.post(process.env.API_URI, chatData, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    if (message.channel.id === process.env.CHAT_CHANNEL) {
+      let chatData = JSON.stringify({
+        user: {
+          name: message.author.globalName,
+        },
+        message: message.content,
+      });
+      axios.post(process.env.API_URI, chatData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    }
   },
 };
 
