@@ -3,10 +3,10 @@ import { join } from "path";
 import { Client, GatewayIntentBits, Collection } from "discord.js";
 import { SlashCommand } from "./types";
 import consola from "consola";
-const { Guilds, GuildMembers, GuildMessages } = GatewayIntentBits;
+const { Guilds, GuildMembers, GuildMessages, MessageContent } = GatewayIntentBits;
 
 export const client = new Client({
-  intents: [Guilds, GuildMembers, GuildMessages],
+  intents: [Guilds, GuildMembers, GuildMessages, MessageContent],
 });
 
 client.slashCommands = new Collection<string, SlashCommand>();
