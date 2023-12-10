@@ -1,0 +1,23 @@
+{
+  "name": "chat-relay-bot",
+  "version": "1.0.0",
+  "description": "채팅 중계용 디스코드 봇",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vientofactory/chat-relay-bot.git"
+  },
+  "author": "vientorepublic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vientofactory/chat-relay-bot/issues"
+  },
+  "homepage": "https://github.com/vientofactory/chat-relay-bot#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
