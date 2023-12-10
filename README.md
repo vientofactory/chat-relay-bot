@@ -7,8 +7,7 @@
 ```env
 BOT_TOKEN="Your Bot Token"
 BOT_PRESENCE_NAME="채팅 중계"
-BOT_PRESENCE_STATUS="Bot Presence Status (online, idle, dnd, invisible...)"
-BOT_PREFIX="Bot Command Prefix"
+API_URI="채팅 중계 웹서버 주소 (ex. http://localhost:3000/chat)"
 ```
 
 # How to use
