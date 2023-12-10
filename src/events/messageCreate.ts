@@ -15,6 +15,7 @@ const event: BotEvent = {
       });
       axios.post(process.env.API_URI, chatData, {
         headers: {
+          secret: process.env.SECRET_KEY,
           "Content-Type": "application/json",
         },
       });
